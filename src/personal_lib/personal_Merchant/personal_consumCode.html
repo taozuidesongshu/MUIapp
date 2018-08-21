@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>消费码核销</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+		<style>
+			/*金额的标题*/
+			
+			.view {
+				background: white;
+				height: 300px;
+				padding: 4px;
+				overflow: auto;
+			}
+			
+			.viewbody {
+				background: white;
+				margin-top: 10px;
+			}
+			/**/
+			
+			.viewbody-btn {
+				display: -webkit-box;
+				-webkit-box-pack: center;
+			}
+			
+			.bg-but {
+				margin-top: 10px;
+				border-radius: 50px;
+				width: 90%;
+			}
+			
+			.viewbody-text {
+				font-size: 12px;
+				padding-left: 10px;
+				color: rgba(100, 100, 100, 1);
+			}
+		</style>
+	</head>
+
+	<body>
+		<script src="../../../js/mui.min.js"></script>
+		<script src="../../../js/Jump.js"></script>
+
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">消费码核销</h1>
+			<p class="mui-pull-right a" style="font-size: 16px; line-height:2.5em;" htmlName="personal_integral_Detail.html">消费明细</p>
+		</header>
+		<div class="mui-content on">
+			<div class="view">
+					<div>1.红酒一箱</div>
+					<div>2.红酒一瓶</div>
+					<div>2.红酒一瓶</div>
+					<div>2.红酒一瓶</div>
+					<div>2.红酒一瓶</div>
+					<div>2.红酒一瓶</div>
+					<div>2.红酒一瓶</div>
+					<div>2.红酒一瓶</div>
+					<div>2.红酒一瓶</div>
+					<div>2.红酒一瓶</div>
+					<div>2.红酒一瓶</div>
+					<div>2.红酒一瓶</div>
+					<!--这里是消费码提交后，显示要交付用户的商品-->
+			</div>
+			<div class="viewbody">
+				<div class="mui-input-row" style="border-bottom: 1px solid  rgba(216, 216, 216, 0.99);">
+					<label>消费码</label>
+					<input type="text" placeholder="请输入客户的消费码">
+				</div>
+
+				<div class="viewbody-btn">
+					<button type="button" class="mui-btn mui-btn-yellow mui-btn-block bg-but">核销</button>
+				</div>
+				<div class="viewbody-text">
+					<figcaption>温馨提示</figcaption>
+					<figcaption>一经核销无法撤回</figcaption>
+
+				</div>
+			</div>
+
+			<!--
+        	描述：li列表结束
+        -->
+
+		</div>
+
+		<script type="text/javascript">
+			mui.init()
+			
+		</script>
+	</body>
+
+</html>

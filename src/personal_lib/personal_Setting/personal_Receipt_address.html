@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">添加新地址</h1>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<div class="mui-input-row">
+						<label>收货人</label>
+						<input type="text" placeholder="普通输入框">
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="mui-input-row">
+						<label>练习电话</label>
+						<input type="text" placeholder="普通输入框">
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="mui-input-row">
+						<label>省份</label>
+						<input type="text" placeholder="省/市/区(县)">
+					</div>
+				</li>
+			</ul>
+			<textarea name="" rows="" cols="" placeholder="详细地址"></textarea>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<div class="mui-input-row mui-radio" style="background: #ffff;">
+						<label>设为默认地址</label>
+						<input name="radio1" type="radio">
+					</div>
+				</li>
+			</ul>
+			<button id="butt" type="button" class="mui-btn mui-btn-blue mui-btn-block">保存</button>
+		</div>
+		<script src="../../../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			document.getElementById("butt").addEventListener("tap",function(){
+				//ajax请求
+				mui.post('http://xxxxxx',{
+						//username:'username',  
+						//password:'password'  
+						},function(data){  
+						//服务器返回响应，根据响应结果，分析是否登录成功；  
+						mui.toast("保存成功")
+						},'json'
+						);  
+				//关闭当前页面
+				mui.back();
+			});
+		</script>
+	</body>
+
+</html>

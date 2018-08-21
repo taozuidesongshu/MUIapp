@@ -1,0 +1,94 @@
+/*
+ *
+ * 页面商品店铺容器的样式表*
+ * *
+ * */
+
+
+/*产品楼层*/
+
+.floor {
+	width: 100%;
+	padding: 0 5px;
+	height: 10em;
+	/*background: white;*/
+}
+
+.floor_title {
+	width: 100%;
+	background: white;
+	height: 2em;
+	border-radius: 5px 5px 5px 5px;
+	text-align: left;
+	line-height: 2em;
+	margin: 5px auto;
+	padding: 0 1em;
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: justify;
+}
+
+.floor_cont {
+	width: 95%;
+	margin: 5px auto;
+	display: -webkit-box;
+	-webkit-box-pack: justify;
+}
+
+.floor_cont_div {
+	-webkit-box-flex:10;
+	background: #FFFFFF;
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+.floor_cont div:nth-of-type(1){
+	margin-right: 0.5em;
+}
+.floor_cont div:nth-of-type(2){
+	margin-left: 0.5em;
+}
+.floor_cont_div img {
+	width: 100%;
+	height: 100%;
+}
+
+.floor_cont_div div:nth-of-type(1) {
+	overflow: hidden;
+	width: 100%;
+	height: 8em;
+}
+
+.floor_cont_div div:nth-of-type(2) {
+	overflow: hidden;
+	width: 100%;
+	height: 2.4em;
+	line-height: 1em;
+	font-size: 12px;
+	text-align: left;
+	overflow: hidden;
+	word-wrap: break-word;
+	color: #838383;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	padding: 4px;
+}
+
+.floor_cont_div div:nth-of-type(3) {
+	font-size: 12px;
+	color: #838383;
+	width: 100%;
+	padding: 0 4px;
+}
+
+.floor_cont_div div:nth-of-type(4) {
+	font-size: 12px;
+	color: #838383;
+	width: 100%;
+	text-align: right;
+	padding: 0 4px;
+}
+
+
+/*产品楼层*/

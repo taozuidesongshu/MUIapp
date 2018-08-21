@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+		<style>
+			.ull {
+				margin-top: 40px;
+			}
+			
+			.ull li {
+				width: 50%;
+			}
+			
+			.col {
+				color: red;
+				margin-top: 20px;
+			}
+			
+			.mui-table-view-cell {
+				text-align: center;
+				height: 100px;
+			}
+			
+			.p1 {
+				margin: 10px 0 0 0;
+			}
+			
+			.p2 {
+				margin: 15px 0 0 0;
+				font-size: 20px;
+				color: red;
+			}
+		</style>
+
+	</head>
+
+	<body>
+
+		<script src="../../../js/mui.min.js"></script>
+
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">我推广的会员</h1>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<p class="p1">所有会员</p>
+					<p class="p2">0</p>
+				</li>
+
+			</ul>
+
+			<!---->
+			<ul class="mui-table-view mui-grid-view ull">
+
+				<li class="mui-table-view-cell ">
+					<a href="#">
+						<span>一级会员</span>
+						<div class="col">0</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media ">
+					<a href="#">
+						<span>二级会员</span>
+						<div class=" col">0</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

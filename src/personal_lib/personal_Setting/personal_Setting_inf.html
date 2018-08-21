@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+		<style>
+			.xx-ri {
+				margin-right: 20px;
+				font-size: 12px;
+				color: #838383;
+			}
+			
+			.head1,
+			.head-img {
+				display: block;
+			}
+			
+			.head1 {
+				width: auto;
+				float: left;
+				height: 35px;
+				line-height: 30px;
+			}
+			
+			.head-img {
+				width: 30px;
+				float: right;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">个人信息</h1>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a id="head" class="mui-navigate-right">头像
+						<span class="mui-pull-right head">
+									<img class="head-img mui-action-preview" id="head-img1" src="imges/tx.jpg"/ style="margin-right: 20px;">
+						</span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						昵称
+						<span class="mui-pull-right xx-ri">15829868354</span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell a" htmlName="personal_birthday.html">
+					<a class="mui-navigate-right">
+						生日
+						<span class="mui-pull-right xx-ri">1994-10-16</span>
+					</a>
+				</li>
+
+				<li class="mui-table-view-cell a" htmlName="personal_gender.html">
+					<a class="mui-navigate-right">
+						性别
+						<span class="mui-pull-right xx-ri">男</span>
+					</a>
+				</li>
+			</ul>
+
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell a" htmlName="personal_Receipt.html">
+					<a class="mui-navigate-right">
+						收货地址
+						<span class="mui-pull-right xx-ri">修改添加</span>
+					</a>
+				</li>
+
+			</ul>
+
+		</div>
+		<script src="../../../js/mui.min.js"></script>
+		<script src="../../../js/Jump.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

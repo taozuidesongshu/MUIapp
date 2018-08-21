@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>提现积分</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+		<style>
+			/*金额的标题*/
+			
+			.sp_1 {
+				text-align: left;
+				display: inline-block;
+				width: 100px;
+				margin-right: 20px;
+			}
+			/*红色的金额*/
+			
+			.sp_2 {
+				text-align: left;
+				color: red;
+				width: 400px;
+			}
+			/*可用余额*/
+			
+			.jinr {
+				height: 120px;
+				text-align: center;
+				line-height: 50px;
+			}
+			/*充值和提现按钮*/
+/*	/*	/*	/*
+			.bg-clor_1,
+			.bg-clor_2 {
+				margin: 30px auto;
+				width: 40%;
+				height: 40px;
+			}*/
+			
+			/*.bg-clor_1 {
+				background: #0cad4f;
+				margin-left: 30px;
+				float: left;
+			}
+			
+			.bg-clor_2 {
+				background: white;
+				margin-right: 30px;
+				float: right;
+			}*/
+			
+			/*用户间转账*/
+			
+			.bg-clor_3 {
+				width: 90%;
+				margin: 20px auto;
+			}
+		</style>
+	</head>
+
+	<body>
+		<script src="../../../js/mui.min.js"></script>
+		<script src="../../../js/Jump.js"></script>
+
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">提现积分</h1>
+		</header>
+		<div class="mui-content on">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<span class="sp_1">已提现</span>
+					<span class="sp_2">1000.00元</span>
+				</li>
+				<li class="mui-table-view-cell">
+					<span class="sp_1">当月收入</span>
+					<span class="sp_2">100.00元</span>
+				</li>
+				<li class="mui-table-view-cell">
+					<span class="sp_1">累计收入</span>
+					<span class="sp_2">500.00元</span>
+				</li>
+				<li class="mui-table-view-cell jinr">
+					<p>可提现积分(元)</p>
+					<h1>200.00</h1>
+				</li>
+			</ul>
+			<!--
+        	描述：li列表结束
+        -->
+        	
+			<!--<button type="button" class="mui-btn mui-btn-success bg-clor_1" htmlName="chongZhi.html">充值</button>
+			<button type="button" class="mui-btn  bg-clor_2" htmlName="tiXian.html">提现</button>-->
+			<button type="button" class="mui-btn mui-btn-yellow mui-btn-block bg-clor_3 a" htmlName="personal_withdraw_with.html">提现</button>
+		</div>
+
+		<script type="text/javascript">
+			mui.init()
+			
+		</script>
+	</body>
+
+</html>

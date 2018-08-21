@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>卡包</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+		<script src="../../../js/mui.min.js"></script>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			/*搜索框*/
+			
+			.mui-title input {
+				width: 80%;
+				border-radius: 20px;
+				height: 35px;
+			}
+			/*搜索按钮*/
+			
+			.sousuo {
+				margin: 0 0 0 10px;
+				font-size: 16px;
+			}
+			/*选择按钮的UI容器*/
+			
+			#uid {
+				padding: 0;
+				margin: 0;
+				display: -webkit-box;
+				-webkit-box-pack: center;
+				-webkit-box-align: center;
+				list-style: none;
+				background: #F7F7F7;
+				/* box-shadow: 0 0 1px rgba(0,0,0,.85);*/
+				box-shadow: 0 1px 2px #ccc;
+			}
+			/*按钮li*/
+			
+			#uid li {
+				-webkit-box-pack: center;
+				-webkit-box-align: center;
+				display: -webkit-box;
+				height: 40px;
+				width: 50%;
+				font-size: 20px;
+			}
+			/*li选择后的样式*/
+			
+			.hevr {
+				color: red;
+				border-bottom: 1px solid red;
+			}
+			/*去掉header标签的阴影效果*/
+			
+			.mui-bar {
+				box-shadow: none;
+			}
+			/*设置红包父容器高度*/
+			
+			.mui-card {
+				height: 25vw;
+				display: -webkit-box;
+				-webkit-box-align: center;
+				-webkit-box-pack: center;
+				border-top: 1px dashed whitesmoke;
+			}
+			/*红包内父容器*/
+			
+			.mui-card-content {
+				padding: 0 10px;
+				display: -webkit-box;
+				-webkit-box-align: center;
+				-webkit-box-pack: justify;
+				width: 100%;
+				margin: 0 auto;
+			}
+			/*红包图片容器*/
+			
+			.imgbox {
+				height: 4em;
+				width: 4em;
+				margin-right: 10px;
+				display: -webkit-box;
+				-webkit-box-align: center;
+				-webkit-box-pack: center;
+				overflow: hidden;
+			}
+			/*红包图片*/
+			
+			.imgbox img {
+				width: 100%;
+				height: 100%;
+			}
+			/*红包说明容器*/
+			
+			.textbox {
+				height: 20vw;
+				background: white;
+				-webkit-box-flex: 15;
+				-webkit-box-align: center;
+			}
+			/*红包说明*/
+			
+			.textbox figure {
+				color: #e4dfd5;
+			}
+			/*红包标题容器*/
+			
+			.textbox div {
+				height: 30px;
+				border-bottom: 1px solid #e4dfd5;
+			}
+			/**/
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">卡 包</h1>
+		</header>
+
+		<div class="mui-content">
+			<!--
+        	描述：切换菜单
+        -->
+			<ul id="uid">
+				<li class="hevr">红包</li>
+				<li>优惠卷</li>
+			</ul>
+			<!--
+        	描述：红包
+        -->
+			<div class="mui-card">
+				<div class="mui-card-content">
+					<div class="imgbox"><img src="../../../img/hongbao.jpg" /></div>
+					<div class="textbox">
+						<div>
+							<span class="mui-pull-left">红包</span>
+							<span class="mui-pull-right" style="color:red;font-size: 24px;">￥18.5</span>
+						</div>
+						<figure style="margin:5px 0 0;font-size: 12px;">
+							<figcaption>使用说明满减规则</figcaption>
+							<!--
+                            	描述：这里是红包有效时间范围
+                            -->
+							<figcaption>2017-11-11 0:00:00~2017-11-11 23:59:59</figcaption>
+						</figure>
+					</div>
+				</div>
+			</div>
+
+			<!--
+        	描述：优惠卷
+        -->
+
+		</div>
+		<!--
+        	描述下面引入了JQ，只为了测试
+        -->
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			/*根据用户点击切换搜淘宝和搜本地li 的样式*/
+			/*每次打开页面默认选择搜本地*/
+			$('#uid li').on('click', function() {
+				$('#uid li').removeClass('hevr');
+				$(this).addClass('hevr');
+			})
+			/*结束*/
+		</script>
+	</body>
+
+</html>

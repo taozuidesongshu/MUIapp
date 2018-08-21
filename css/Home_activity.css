@@ -1,0 +1,29 @@
+	/*店铺商家活动的详情页样式表*/
+	/*活动主图*/
+	
+	.activity_imgdiv {
+		width: 95%;
+		height: 12em;
+		margin: 10px auto;
+		overflow: hidden;
+		box-shadow: 0px 4px 4px #888888;
+		border-radius: 5px;
+	}
+	
+	.activity_imgdiv img {
+		width: 100%;
+		height: 100%;
+	}
+	/*活动页面说明*/
+	
+	.details_cont {
+		width: 90%;
+		margin: 5px auto;
+		overflow: hidden;
+		font-size: 1em;
+	}
+	
+	.details_cont_text {
+		color: #949494;
+		margin-top: 1.5em;
+	}

@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+		<style>
+			.bg-clor {
+				background-color: warning;
+				margin: 40px auto;
+				width: 98%;
+			}
+			
+			.yanzhengma {
+				display: -webkit-box;
+				-webkit-box-align: center;
+				-webkit-box-pack: justify;
+			}
+		</style>
+	</head>
+
+	<body>
+		<script src="../../../js/mui.min.js"></script>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">提现</h1>
+		</header>
+		<div class="mui-content mui-table-view">
+
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a class=" mui-input-row">
+						<label>提现金额</label> <input type="number" placeholder="可提现额度为3000.00元">
+					</a>
+				</li>
+				<!--
+           	描述：分界线
+           -->
+				<li class="mui-table-view-cell">
+					<a class="mui-input-row">
+						<label>提现方式</label>
+						<select name="select" id="select_k1" class="">
+
+							<option value="1" selected="true">支付宝</option>
+
+							<option value="2">微信</option>
+
+							<option value="3">银联</option>
+
+						</select>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="yanzhengma">
+						<div>
+							<input type="text" placeholder="验证码" style="margin-bottom: 0; width: 10em;">
+						</div>
+						<div>
+							<button type="button" style="margin: 10px auto; font-size: 1em;">获取验证码</button>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+
+			<!--
+           	描述：分界线
+           -->
+
+			<button type="button" class="mui-btn-warning mui-btn-block bg-clor">按钮</button>
+
+		</div>
+
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

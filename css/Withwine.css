@@ -1,0 +1,58 @@
+/*
+ *兑酒卷页面的样式
+ * */
+
+.with_div {
+	background: white;
+	border-radius: 5px;
+	height: 6em;
+	-webkit-box-pack: inherit;
+	padding: 0.5em;
+	box-shadow: 1px 2px 6px #d9d9dc;
+	position: relative;
+	
+}
+
+.jiu_div {
+	display: -webkit-box;
+	-webkit-box-align: center;
+	margin: 0.5em auto;
+	width: 95%;
+}
+
+.with_title {
+	height: 2em;
+	-webkit-box-pack: justify;
+}
+
+.with_div_left {
+	text-align: center;
+	-webkit-box-flex: 5;
+	height: 100%;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-pack: center;
+	color: rgba(26, 167, 167, 1);
+}
+
+.with_div_right {
+	height: 100%;
+	-webkit-box-flex: 16;
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: justify;
+	font-size: 14px;
+	color: #666;
+	font-family: -apple-system, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Arial, sans-serif;
+}
+
+.with_cor {
+	text-align: center;
+}
+/*已使用按钮*/
+.Used{
+	position: absolute;
+	right: 40px;
+	top: 30px;
+	font-size: 40px !important;
+}

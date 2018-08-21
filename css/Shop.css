@@ -1,0 +1,39 @@
+/*本地商家页面的样式表*/
+	.mui-slider-item {
+		height: 15em !important;
+		overflow: hidden;
+	}
+	/**/
+	
+	.Features {
+		display: -webkit-box;
+		-webkit-box-align: center;
+		-webkit-box-pack: justify;
+		background: #FFFFFF;
+		padding: ;
+	}
+	
+	.Features div {
+		width: 33%;
+		height: 6em;
+		/*border-radius:100px;*/
+		text-align: center;
+		border-radius: 5px;
+		border: 1px solid #F3F3F3;
+		line-height: 6em;
+	}
+	
+	.Features_left {
+		background: url(../img/0191f44.jpg);
+		background-size: 100%;
+	}
+	
+	.Features_in {
+		background: url(../img/0191f44.jpg);
+		background-size: 100%;
+	}
+	
+	.Features_right {
+		background: url(../img/0191f44.jpg);
+		background-size: 100%;
+	}

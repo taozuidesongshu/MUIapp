@@ -1,0 +1,48 @@
+/*搜索框*/
+			
+			.mui-title input {
+				width: 80%;
+				border-radius: 20px;
+				height: 35px;
+			}
+			/*搜索按钮*/
+			
+			.sousuo {
+				margin: 0 0 0 10px;
+				font-size: 16px;
+			}
+			
+			/*选择按钮的UI容器*/
+			
+			#uid {
+				padding: 0;
+				margin: 0;
+				display: -webkit-box;
+				-webkit-box-pack: center;
+				-webkit-box-align: center;
+				list-style: none;
+				background: #F7F7F7;
+				/* box-shadow: 0 0 1px rgba(0,0,0,.85);*/
+				box-shadow: 0 1px 2px #ccc;
+			}
+			/*按钮li*/
+			
+			#uid li {
+				-webkit-box-pack: center;
+				-webkit-box-align: center;
+				display: -webkit-box;
+				height: 40px;
+				width: 50%;
+				font-size: 20px;
+			}
+			/*li选择后的样式*/
+			
+			.hevr {
+				color: red;
+				border-bottom: 1px solid red;
+			}
+			/*去掉header标签的阴影效果*/
+			
+			.mui-bar {
+				box-shadow: none;
+			}

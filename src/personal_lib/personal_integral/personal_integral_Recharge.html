@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+		<style>
+			/*金额的标题*/
+			
+			.view {
+				background: white;
+				height: 150px;
+				text-align: center;
+				display: -webkit-box;
+				-webkit-box-pack: center;
+				-webkit-box-align: center
+			}
+			
+			.viewbody {
+				background: white;
+				margin-top: 10px;
+			}
+			/**/
+			
+			.viewbody-btn {
+				display: -webkit-box;
+				-webkit-box-pack: center;
+			}
+			
+			.bg-but {
+				margin-top: 10px;
+				border-radius: 50px;
+			}
+			
+			.viewbody-text {
+				font-size: 12px;
+				padding-left: 10px;
+				color: rgba(100, 100, 100, 1);
+				font-size: 12px;
+			}
+			
+			.viewbody input {
+				font-size: 12px;
+			}
+			
+			.viewbody label {
+				font-size: 12px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<script src="../../../js/mui.min.js"></script>
+
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">充值库存积分</h1>
+		</header>
+		<div class="mui-content on">
+			<div class="view">
+				<div>
+					<img src="../../../img/lou.png" />
+					<div>积分余额</div>
+					<p>0.00</p>
+				</div>
+			</div>
+			<div class="viewbody">
+				<div class="mui-input-row" style="border-bottom: 1px solid  rgba(216, 216, 216, 0.99);">
+					<label>充值金额</label>
+					<input type="text" placeholder="请你输入要充值的积分数量">
+				</div>
+				<div class="mui-input-row" style="border-bottom: 1px solid  rgba(216, 216, 216, 0.99);">
+					<label>总计</label>
+					<!--此处为计算后的 人民币金额-->
+					<input type="text" placeholder="1元能充值1积分" disabled="disabled">
+					<p style="padding-left: 20px;">选择支付方式</p>
+<!--
+					<div class="mui-input-row mui-radio mui-left">
+						<label>预付款支付（余额：￥0.00）</label>
+						<input name="radio1" type="radio">
+					</div>
+					<div class="mui-input-row mui-radio mui-left">
+						<label>红积分支付（余额：￥0.00）</label>
+						<input name="radio1" type="radio" checked>
+					</div>-->
+					<div class="mui-input-row mui-radio mui-left ">
+						<label>支付宝</label>
+						<input name="radio1" type="radio">
+					</div>
+					<div class="mui-input-row mui-radio mui-left ">
+						<label>微信</label>
+						<input name="radio1" type="radio">
+					</div>
+					<!--<div class="mui-input-row mui-radio mui-left">
+						<label>线下转账</label>
+						<input name="radio1" type="radio">
+					</div>-->
+
+					<div class="viewbody-btn">
+						<button type="button" class="mui-btn mui-btn-yellow mui-btn-block bg-but" style="width: 90%;">提交</button>
+					</div>
+					<div class="viewbody-text">
+						<figcaption>温馨提醒</figcaption>
+						<figcaption>1元能充值1积分</figcaption>
+						
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<script type="text/javascript">
+			mui.init()
+			
+		</script>
+	</body>
+
+</html>

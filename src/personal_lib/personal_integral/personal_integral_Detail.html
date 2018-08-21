@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+
+		<style type="text/css">
+			.p_s_1 {
+				float: left;
+				margin-left: 10px;
+				line-height: 30px;
+			}
+			
+			.p_s_2,
+			.je {
+				float: right;
+				margin-right: 10px;
+				width: 100px; 
+				text-align: right;
+				line-height: 30px;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<script src="../../../js/mui.min.js"></script>
+		<script src="../../../js/Jump.js"></script>
+
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">账单明细</h1>
+		</header>
+
+		<div class="mui-content">
+			<p style="margin-top: 5px; height: 20px;">
+				<span class="p_s_1">月账单</span>
+				<span class="p_s_2">筛选</span>
+			</p>
+			<ul class="mui-table-view">
+ 
+				<!--
+		               	描述：每一条消息的结构
+               -->
+				<li class="mui-table-view-cell mui-media on a" htmlName="./personal_integral_DetailS.html">
+					<a href="javascript:;" >
+						<span class="je">+150.0</span>
+						<div class="mui-media-body">
+							充值
+							<p class="mui-ellipsis">2017-08010 11:12:15</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media on a" htmlName="./personal_integral_DetailS.html">
+					<a href="javascript:;">
+						<span class="je">-1545</span>
+						<div class="mui-media-body">
+							消费
+							<p class="mui-ellipsis">2017-08010 11:12:15</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media on a" htmlName="./personal_integral_DetailS.html">
+					<a href="javascript:;">
+						<span class="je">-5655</span>
+						<div class="mui-media-body">
+							积分转赠
+							<p class="mui-ellipsis">2017-08010 11:12:15</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

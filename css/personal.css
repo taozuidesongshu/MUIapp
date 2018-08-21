@@ -1,0 +1,144 @@
+/*个人主页的样式表*/
+
+.head {
+	width: 100%;
+	height: 10em;
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: justify;
+	background: #FDC830;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #F37335, #FDC830);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #F37335, #FDC830);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.head_Avatar {
+	width: 6em;
+	height: 6em;
+	border-radius: 50%;
+	margin-left: 20px;
+	overflow: hidden;
+	border: 2px solid white;
+}
+
+.head_name {
+	height: 4em;
+	color: white;
+}
+
+.head_name div:nth-of-type(1) {
+	font-size: 1.5em;
+	height: 1.5em;
+}
+
+.head_but {
+	width: 4em;
+	height: 6em;
+	margin-right: 10px;
+	text-align: center;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-pack: justify;
+}
+
+.head_but span {
+	font-size: 2em;
+	color: white;
+}
+
+
+/*积分*/
+
+.integral {
+	width: 100%;
+	height: 4em;
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	background: white;
+}
+
+.integral_left,
+.integral_right {
+	-webkit-box-flex: 4;
+	text-align: center;
+}
+
+.integral_left div,
+.integral_right div {
+	margin-bottom: 6px;
+	color: #636060;
+}
+
+
+/*订单*/
+
+.Order {
+	background: white;
+	margin: 5px auto;
+	border-radius: 5px;
+}
+
+
+/*签到*/
+
+.Sign {
+	margin-top: 0.5em;
+}
+
+.Sign_lib div {
+	background: red;
+	width: 6em;
+	height: 3em;
+	margin: 0 auto;
+	line-height: 3em;
+	border-radius: 5px;
+	color: white;
+}
+
+
+/*图标*/
+
+.ico {
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: justify;
+	padding: 6px 10px;
+}
+
+.Order_icodiv {
+	text-align: center;
+	padding: 5px;
+	width: 25%;
+}
+
+.Order_icodiv div:nth-of-type(1) {
+	font-size: 2em;
+}
+
+.Order_icodiv div:nth-of-type(2) {
+	margin-top: 1em;
+}
+
+.pers_icodiv {
+	text-align: center;
+	padding: 4px;
+	width: 6em;
+}
+
+.pers_icodiv div:nth-of-type(1) {
+	font-size: 2em;
+	position: relative;
+}
+
+.mui-badge {
+	position: absolute;
+	top: -10px;
+	right: 20px;
+}
+
+.pers_icodiv div:nth-of-type(2) {
+	margin-top: 1em;
+}

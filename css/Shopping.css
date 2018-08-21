@@ -1,0 +1,134 @@
+/*购物车的样式表*/
+.floor_title {
+	width: 100%;
+	background: white;
+	border-radius: 5px 5px 5px 5px;
+	text-align: left;
+	line-height: 2em;
+	margin: 5px auto;
+	padding: 0 1em;
+	
+}
+.floor_title_box{
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: justify;
+}
+	
+
+.shop_li {
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: inherit;
+	padding: 10px 5px;
+}
+
+.shop_li_left,
+.shop_li_in,
+.shop_li_right {
+	height: 5em;
+}
+
+.shop_li_left {
+	position: relative;
+	width: 30px;
+}
+
+.shop_li_left input {
+	top: 1.5em !important;
+	right: 5px !important;
+}
+
+.shop_li_right {
+	position: relative;
+	width: 12em;
+	margin-left: 10px;
+}
+.p {
+	overflow: hidden;
+	width: 100%;
+	height:2.5em;
+	word-wrap: break-word;
+	color: #838383;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	}
+.shop_li_right_div {
+	position: absolute;
+	bottom: 0;
+}
+
+.mui-ellipsis {
+	height: 2em;
+	line-height: 1em;
+}
+
+
+/**/
+
+.mui-numbox {
+	width: 120px;
+	height: 30px;
+}
+
+.shop_li_delete {
+	position: absolute;
+	right: 5px;
+	top: 10px;
+}
+
+
+/*底部菜单*/
+
+.shopCart:after,
+.shopCart .logo:after {
+	display: table;
+	content: '';
+	clear: both;
+}
+
+.shopCart {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	background: #000000;
+	z-index: 1;
+}
+
+.shopCart div {
+	float: left;
+}
+
+.shopCart .left {
+	width: 70%;
+	height: 50px;
+	background: #fff;
+}
+
+.shopCart .right {
+	width: 30%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background: #1489EB;
+	color: #fff;
+}
+
+.shopCart .logo {
+	position: relative;
+	width: 85px;
+	height: 64px;
+}
+
+.shopCart .logo img {
+	position: absolute;
+	top: -15px;
+	left: 15px;
+	width: 70%;
+}
+
+.shopCart .price {
+	line-height: 50px;
+	color: #000;

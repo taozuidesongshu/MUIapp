@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			.yanzhengma {
+				height: 40px;
+				width: 100%;
+			}
+			/*验证码输入框*/
+			
+			.yanzhengma input {
+				height: 40px;
+				width: 70%;
+			}
+			/*获取验证码按钮*/
+			
+			.yanzhengma button {
+				height: 40px;
+				width: 28%;
+				padding: 0;
+				margin: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">注册</h1>
+		</header>
+		<div class="mui-content">
+			<p></p>
+			<form class="mui-input-group">
+				<div class="mui-input-row">
+					<label>邀请码</label>
+					<input id='account' type="text" class="mui-input-clear mui-input" placeholder="请输入邀请码">
+				</div>
+				<div class="mui-input-row">
+					<label>姓名</label>
+					<input id='password' type="password" class="mui-input-clear mui-input" placeholder="请输入姓名">
+				</div>
+				<div class="mui-input-row">
+					<label>手机</label>
+					<input id='email' type="email" class="mui-input-clear mui-input" placeholder="请输入手机">
+				</div>
+				<p class="yanzhengma">
+					<input type="text" name="" id="" placeholder="验证码">
+					<button type="button" class="mui-btn">获取验证码</button>
+				</p>
+				<div class="mui-input-row">
+					<label>登陆密码</label>
+					<input id='password' type="password" class="mui-input-clear mui-input" placeholder="登陆密码">
+				</div>
+				<div class="mui-input-row">
+					<label>确认密码</label>
+					<input id='password' type="password" class="mui-input-clear mui-input" placeholder="再次输入登陆密码">
+				</div>
+				<div class="mui-input-row">
+					<label>支付密码</label>
+					<input id='password' type="password" class="mui-input-clear mui-input" placeholder="支付密码用于线下交易">
+				</div>
+			</form>
+			<p class="mui-content-padded" style="text-align: center;"><input type="checkbox" id="" name="" />我已经仔细阅读并接受注册许可协议</p>
+			<div class="mui-content-padded">
+
+				<button id='reg' class="mui-btn mui-btn-block mui-btn-primary">立即注册</button>
+			</div>
+
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

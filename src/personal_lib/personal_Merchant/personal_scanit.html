@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+
+		<style>
+			#bcid {
+				position: absolute;
+				background: #000000;
+			}
+			
+			html,
+			body,
+			div {
+				height: 100%;
+				width: 100%;
+			}
+			
+			.fbt {
+				color: #0E76E1;
+				width: 33%;
+				background-color: #ffffff;
+				float: left;
+				line-height: 44px;
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">扫一扫</h1>
+		</header>
+		<div class="mui-content">
+			<div id="bcid">
+				<!--盛放扫描控件的div-->
+			</div>
+			<div class="mui-bar mui-bar-footer" style="padding: 0px;">
+				<div class="fbt" onclick="scanPicture();">从相册选择</div>
+				<div class="fbt" id="turnTheLight">闪光灯</div>
+				<div class="fbt mui-action-back">取　 消</div>
+			</div>
+		</div>
+
+		<script src="../../../js/mui.min.js+"></script>
+		<script type="text/javascript">
+			//初始化MUI扩展组建
+			mui.plusReady(function() {
+				//初始化MUI
+				mui.init();
+
+				//初始化完成后自动开始调用扫描函数名字
+				startRecognize();
+			});
+
+			//创建扫描函数
+			function startRecognize() {
+				try {
+					var filter; //要识别的条码类型过滤器，为条码类型常量数组.默认情况支持QR、EAN13、EAN8三种类型,filter为默认参数
+
+					//自定义的扫描控件样式[可定义条码识别控件的样式，如扫描框、扫描条的颜色等。]
+					var styles = {
+						frameColor: "#fff", //扫描框颜色
+						scanbarColor: "#fff", //扫描条颜色
+						background: "" //扫描控件背景颜色
+					}
+					//扫描控件构造[扫描器的容器DOM的ID，过滤器，扫描器的样式]
+					scan = new plus.barcode.Barcode('bcid', 'filter', 'styles');
+					scan.onmarked = onmarked; //条码识别成功事件赋给scan的onmarked成员
+					scan.onerror = onerror; //条码识别失败事件赋给scan的onerror成员
+					scan.start(); //开始条码扫描的内置方法
+
+					//打开关闭闪光弹处理
+					var flag = false; //默认闪光灯是关闭状态
+					//获取闪光灯按钮并且添加点击事件和功能
+					document.getElementById("turnTheLight").addEventListener('tap', function() {
+						if(flag == false) {
+							scan.setFlash(true); //如果是关闭状态，那么打开闪光灯
+							flag = true;
+						} else {
+							scan.setFlash(false); //如果是打开状态，那么关闭灯
+							flag = true;
+						}
+					});
+				} catch(e) {
+					//如果捕获到错误则弹出错误
+					alert("出现错误了:\n" + e)
+				}
+			};
+
+			function onerror(e) {
+				alert(e);
+			};
+			//扫描成功后的进行条码类型判断并且弹出结果
+			function onmarked(type, result) {
+				var text = '';
+				switch(type) {
+					case plus.barcode.QR:
+						text = 'QR';
+						break;
+					case plus.barcode.EAN13:
+						text = 'EAN13';
+						break;
+					case plus.barcode.EAN8:
+						text = 'EAN8';
+						break;
+				}
+				//弹出结果
+				alert(text + ":" + result);
+				//var tes=result;
+				//chuancan();
+			};
+
+			//从相册选择二维码图片
+			function scanPicture() {
+				plus.gallery.pick(function(path) {
+					plus.barcode.scan(path, onmarked, function(error) {
+						plus.nativeUI.alert("无法识别此图片");
+					});
+				}, function(err) {
+					plus.nativeUI.alert("Failed: " + err.message);
+				});
+			}
+			//结束
+
+			//      function chuancan(){
+			//			mui.openWindow({
+			//					url:'fukuan.html',
+			//					id:'fukuan.html',
+			//					styles:{
+			//						top:'0px',
+			//						buttom:'0px',
+			//					}
+			//					extras:{
+			//					//tes=tes,
+			//					//自定义扩展参数，可以用来处理页面间传值
+			//							}
+			//				});
+			//				mui.back();
+			//				}
+			//      
+
+			//扫描容器宽度
+			//      var height = window.innerHeight + 'px';//获取页面实际高度  
+			//		var width = window.innerWidth + 'px';  
+			//			document.getElementById("bcid").style.height= height;  
+			//			document.getElementById("bcid").style.width= width;
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.con {
+				width: 95%;
+				margin: 10px auto;
+			}
+			/*原手机号码输入框*/
+			
+			.innn {
+				height: 40px;
+				width: 100%;
+			}
+			/*验证码容器*/
+			
+			.yanzhengma {
+				height: 40px;
+				width: 100%;
+			}
+			/*验证码输入框*/
+			
+			.yanzhengma input {
+				height: 40px;
+				width: 70%;
+			}
+			/*获取验证码按钮*/
+			
+			.yanzhengma button {
+				height: 40px;
+				width: 28%;
+				padding: 0;
+				margin: 0;
+			}
+			
+			.tinam {
+				font-size: 16px;
+				height: 30px;
+				line-height: 50px;
+			}
+		</style>
+	</head>
+	<!--这个页面模版适合用于找回支付/登陆密码-->
+	<!--这个页面模版适合用于找回支付/登陆密码-->
+	<!--这个页面模版适合用于找回支付/登陆密码-->
+	<!--这个页面模版适合用于找回支付/登陆密码-->
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">找回登陆密码</h1>
+		</header>
+		<div class="mui-content">
+			<div class="con">
+				<p class="tinam">手机号(帐号)</p>
+				<div>
+					<input class="innn" type="text" name="" id="" placeholder="手机号" />
+					<p class="yanzhengma">
+						<input type="text" name="" id="" placeholder="验证码">
+						<button type="button" class="mui-btn">获取验证码</button>
+					</p>
+					<p class="tinam">新的登陆密码</p>
+					<input class="innn" type="text" name="" id="" placeholder="新密码" />
+					<p class="tinam">重复输入新登陆密码</p>
+					<input class="innn" type="text" name="" id="" placeholder="新密码" />
+				</div>
+				<button type="button" class="mui-btn mui-btn-blue mui-btn-block">确定</button>
+			</div>
+		</div>
+		<script src="../../../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

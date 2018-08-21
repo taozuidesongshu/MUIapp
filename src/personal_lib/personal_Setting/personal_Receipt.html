@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>收货地址</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			.bodyy {
+				margin: 20px auto 0px;
+				width: 95%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">收货地址</h1>
+			<a class="mui-icon mui-icon-plusempty mui-pull-right" id="tianjia"></a>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media">
+					<div class="mui-media-body">
+						名字
+						<span class="mui-pull-right">155555555555555555</span>
+						<p class="mui-ellipsis">陕西省汉中市桃园新城xx楼xx市区</p>
+						<p class="mui-ellipsis" style="">
+							<p class="mui-ellipsis mui-pull-right" style="margin-top: 10px;">
+								<button type="button" class="mui-btn mui-btn-outlined a" htmlName="personal_Receipt_address.html">编辑</button>
+								<button type="button" class="mui-btn ">删除</button>
+							</p>
+					</div>
+				</li>
+				<li class="">第1个选项卡子项</li>
+			</ul>
+		</div>
+		<script src="../../../js/mui.min.js"></script>
+		<script src="../../../js/Jump.js"></script>
+		<script type="text/javascript">
+			mui.init()
+
+			//创建新的地址
+//						document.getElementById("tianjia").addEventListener("tap",function(){
+//							mui.openWindow({
+//								url:"personal_Receipt_address.html",
+//								id:"personal_Receipt_address",
+//								styles:{
+//									top:0px,
+//									bottom:0px,
+//								},
+//								extras:{
+//									//页面传参
+//								},
+//								show:{
+//									autoShow: true,
+//									//页面loaded事件发生后自动显示，默认为true 
+//									aniShow: 'slide-in-right', //页面显示动画，默认为”slide-in-right“；  页面出现的方式 左右上下
+//									duration: '100' //页面动画持续时间，Android平台默认100毫秒，iOS平台默认200毫秒； 
+//								},
+//								waiting: { // 控制 弹出转圈框的信息
+//								autoShow: true, //自动显示等待框，默认为true 
+//								title: '加载中', //等待对话框上显示的提示内容 
+//								options: {
+//									width:, //等待框背景区域宽度，默认根据内容自动计算合适宽度 
+//									height:, //等待框背景区域高度，默认根据内容自动计算合适高度 ...... 
+//								}
+//							}
+//							})
+//						});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,763 @@
+{
+	"@platforms": ["android", "iPhone", "iPad"],
+	"id": "H578CF83A",/*应用的标识，创建应用时自动生成，勿手动修改*/
+	"name": "webapp",/*应用名称，程序桌面图标名称*/
+	"version": {
+		"name": "1.0.0",/*应用版本名称*/
+		"code": "83"
+	},
+	"description": "",/*应用描述信息*/
+	"icons": {
+		"72": "icon.png"
+	},
+	"launch_path": "index.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+	"developer": {
+		"name": "",/*开发者名称*/
+		"email": "",/*开发者邮箱地址*/
+		"url": "http://www.dcloud.io"
+	},
+	"permissions": {
+        "Cache": {
+            "description": "管理应用缓存"
+        },
+        "Console": {
+            "description": "跟踪调试输出日志"
+        },
+        "Contacts": {
+            "description": "访问系统联系人信息"
+        },
+        "Events": {
+            "description": "应用扩展事件"
+        },
+        "Messaging": {
+            "description": "访问通讯能力"
+        },
+        "Maps": {
+            "description": "管理地图插件"
+        },
+        "Speech": {
+            "description": "管理语音识别插件"
+        }
+	},
+	"plus": {
+		"splashscreen": {
+			"autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
+			"waiting": true
+		},
+		"runmode": "liberate",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
+		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
+		"distribute": {
+			"apple": {
+				"appid": "",/*iOS应用标识，苹果开发网站申请的appid，如io.dcloud.HelloH5*/
+				"mobileprovision": "",/*iOS应用打包配置文件*/
+				"password": "",/*iOS应用打包个人证书导入密码*/
+				"p12": "",/*iOS应用打包个人证书，打包配置文件关联的个人证书*/
+				"devices": "universal",/*iOS应用支持的设备类型，可取值iphone/ipad/universal*/
+				"frameworks": []
+			},
+			"google": {
+				"packagename": "",/*Android应用包名，如io.dcloud.HelloH5*/
+				"keystore": "",/*Android应用打包使用的密钥库文件*/
+				"password": "",/*Android应用打包使用密钥库中证书的密码*/
+				"aliasname": "",/*Android应用打包使用密钥库中证书的别名*/
+				"permissions": ["<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>","<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>","<uses-permission android:name=\"android.permission.VIBRATE\"/>","<uses-permission android:name=\"android.permission.READ_LOGS\"/>","<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>","<uses-feature android:name=\"android.hardware.camera.autofocus\"/>","<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>","<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>","<uses-permission android:name=\"com.android.launcher.permission.UNINSTALL_SHORTCUT\"/>","<uses-permission android:name=\"android.permission.CAMERA\"/>","<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>","<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>","<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>","<uses-permission android:name=\"com.android.launcher.permission.INSTALL_SHORTCUT\"/>","<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>","<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>","<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>","<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>","<uses-permission android:name=\"android.permission.CALL_PHONE\"/>","<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>","<uses-feature android:name=\"android.hardware.camera\"/>","<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>","<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"]
+			},
+			"orientation": ["portrait-primary", "portrait-secondary"],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
+			"icons": {
+				"ios": {
+					"prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
+					"auto": "", /*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
+					"iphone": {
+						"normal": "",/*iPhone普通屏幕程序图标，分辨率：57x57*/
+						"retina": "",/*iPhone高分屏程序图标，分辨率：114x114*/
+						"retina7": "",/*iPhone iOS7高分屏程序图标，分辨率：120x120*/
+						"spotlight-normal": "", /*iPhone Spotlight搜索程序图标，分辨率：29x29*/
+						"spotlight-retina": "", /*iPhone高分屏Spotlight搜索程序图标，分辨率：58x58*/
+						"spotlight-retina7": "",/*iPhone iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "", /*iPhone设置页面程序图标，分辨率：29x29*/
+						"settings-retina": ""
+					},
+					"ipad": {
+						"normal": "", /*iPad普通屏幕程序图标，分辨率：72x72*/
+						"retina": "", /*iPad高分屏程序图标，分辨率：144x144*/
+						"normal7": "", /*iPad iOS7程序图标，分辨率：76x76*/
+						"retina7": "", /*iPad iOS7高分屏程序图标，分辨率：152x152*/
+						"spotlight-normal": "", /*iPad Spotlight搜索程序图标，分辨率：50x50*/
+						"spotlight-retina": "", /*iPad高分屏Spotlight搜索程序图标，分辨率：100x100*/
+						"spotlight-normal7": "",/*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
+						"spotlight-retina7": "",/*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "",/*iPad设置页面程序图标，分辨率：29x29*/
+						"settings-retina": ""
+					}
+				},
+				"android": {
+					"mdpi": "", /*普通屏程序图标，分辨率：48x48*/
+					"ldpi": "", /*大屏程序图标，分辨率：48x48*/
+					"hdpi": "", /*高分屏程序图标，分辨率：72x72*/
+					"xhdpi": "",/*720P高分屏程序图标，分辨率：96x96*/
+					"xxhdpi": ""
+				}
+			},
+			"splashscreen": {
+				"ios": {
+					"iphone": {
+						"default": "", /*iPhone3启动图片选，分辨率：320x480*/
+						"retina35": "",/*3.5英寸设备(iPhone4)启动图片，分辨率：640x960*/
+						"retina40": ""
+					},
+					"ipad": {
+						"portrait": "", /*iPad竖屏启动图片，分辨率：768x1004*/
+						"portrait-retina": "",/*iPad高分屏竖屏图片，分辨率：1536x2008*/
+						"landscape": "", /*iPad横屏启动图片，分辨率：1024x748*/
+						"landscape-retina": "", /*iPad高分屏横屏启动图片，分辨率：2048x1496*/
+						"portrait7": "", /*iPad iOS7竖屏启动图片，分辨率：768x1024*/
+						"portrait-retina7": "",/*iPad iOS7高分屏竖屏图片，分辨率：1536x2048*/
+						"landscape7": "", /*iPad iOS7横屏启动图片，分辨率：1024x768*/
+						"landscape-retina7": ""
+					}
+				},
+				"android": {
+					"mdpi": "", /*普通屏启动图片，分辨率：240x282*/
+					"ldpi": "", /*大屏启动图片，分辨率：320x442*/
+					"hdpi": "", /*高分屏启动图片，分辨率：480x762*/
+					"xhdpi": "", /*720P高分屏启动图片，分辨率：720x1242*/
+					"xxhdpi": ""
+				}
+			}
+		}
+	},
+	"dependencies": {
+	  "pages": {
+	    "index.html": {
+	      "resources": [
+	        "src/Home.html",
+	        "js/mui.min.js",
+	        "css/mui.min.css",
+	        "fonts/mui.ttf"
+	      ],
+	      "refer": [
+	        "src/Shop.html",
+	        "src/personal.html",
+	        "src/Shopping.html",
+	        "src/Home.html"
+	      ],
+	      "priority": 0
+	    },
+	    "src/Home.html": {
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "css/Home.css",
+	        "img/eb1d8a588e4faac40da5c8d464cf10bd_bg.gif",
+	        "img/336.png",
+	        "css/commod.css",
+	        "js/scrolltext.js",
+	        "js/mui.min.js",
+	        "js/Jump.js",
+	        "img/timg.jpg",
+	        "img/0191f2.jpg",
+	        "img/631819b7b71627864db56e1ca0984463_hot001.gif"
+	      ],
+	      "refer": [
+	        "src/Home_lib/Home_searchfor/Home_searchfor.html",
+	        "src/Home_lib/Home_activity/Home_activity.html",
+	        "src/Home_lib/Home_integral/Home_integral.html",
+	        "src/Home_lib/Home_Cardcoupon/Home_activity_Cardcoupon.html",
+	        "src/Home_lib/Home_free/Home_free_Option.html",
+	        "src/Home_lib/Home_news/Home_news.html",
+	        "src/Home_lib/Home_product/Home_product.html"
+	      ],
+	      "priority": 0
+	    },
+	    "src/Home_lib/Home_activity/Home_activity.html": {
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "css/Home_activity.css",
+	        "js/mui.min.js",
+	        "js/Jump.js",
+	        "img/1.jpg",
+	        "img/3.png"
+	      ],
+	      "refer": [
+	        "src/Home_lib/Home_activity/Home_activity_Details.html"
+	      ],
+	      "priority": 0
+	    },
+	    "src/Home_lib/Home_integral/Home_integral.html": {
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "css/commod.css",
+	        "css/Home_activity.css",
+	        "js/mui.min.js",
+	        "js/Jump.js",
+	        "img/364246907589951580.jpg",
+	        "img/336.png"
+	      ],
+	      "refer": [
+	        "src/Home_lib/Home_integral/Home_integra_rulel.html",
+	        "src/Home_lib/Home_integral/Home_integral_commodity.html"
+	      ],
+	      "priority": 0
+	    },
+	    "src/Shop.html": {
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "css/commod.css",
+	        "css/Shop.css",
+	        "img/0191f44.jpg",
+	        "js/scrolltext.js",
+	        "js/mui.min.js",
+	        "js/Jump.js"
+	      ],
+	      "refer": [
+	        "src/Shop_lib/Shop_Entering.html",
+	        "src/Shop_lib/Shop_Checkin.html"
+	      ],
+	      "priority": 0
+	    },
+	    "src/personal.html": {
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "css/personal.css",
+	        "js/mui.min.js",
+	        "js/Jump.js",
+	        "img/336.png"
+	      ],
+	      "refer": [
+	        "src/personal_lib/personal_Setting/personal_Setting.html",
+	        "src/personal_lib/personal_Cardroll/personal_Cardroll.html",
+	        "src/Home_lib/Home_news/Home_news.html",
+	        "src/personal_lib/personal_Signin_shake/personal_shake.html",
+	        "src/personal_lib/personal_integral/personal_integral_Recharge.html",
+	        "src/personal_lib/personal_integral/personal_integral_Transfer.html",
+	        "src/personal_lib/personal_integral/personal_integral_Detail.html",
+	        "src/personal_lib/personal_Cardroll/personal_Withwine.html",
+	        "src/personal_lib/personal_Promotion/personal_Promotion.html",
+	        "src/personal_lib/personal_Merchant/personal_Merchant.html"
+	      ],
+	      "priority": 0
+	    },
+	    "src/personal_lib/personal_Setting/personal_Setting.html": {
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "js/mui.min.js",
+	        "js/Jump.js"
+	      ],
+	      "refer": [
+	        "src/personal_lib/personal_Setting/personal_Setting_inf.html",
+	        "src/personal_lib/personal_Setting/personal_Setti.html"
+	      ],
+	      "priority": 0
+	    },
+	    "src/Shopping.html": {
+	      "href": "src/Shopping.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "css/Shopping.css",
+	        "js/jquery.min.js",
+	        "js/mui.min.js",
+	        "js/Shopping.js",
+	        "img/0191f44.jpg"
+	      ],
+	      "priority": 0
+	    },
+	    "src/Shop_lib/Shop_Entering.html": {
+	      "href": "src/Shop_lib/Shop_Entering.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "css/Home_activity.css",
+	        "js/mui.min.js"
+	      ],
+	      "priority": 1
+	    },
+	    "src/Shop_lib/Shop_Checkin.html": {
+	      "href": "src/Shop_lib/Shop_Checkin.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "js/mui.min.js"
+	      ],
+	      "priority": 2
+	    },
+	    "src/Home_lib/Home_activity/Home_activity_Details.html": {
+	      "href": "src/Home_lib/Home_activity/Home_activity_Details.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "css/Home_activity.css",
+	        "js/mui.min.js",
+	        "img/1.jpg"
+	      ],
+	      "priority": 2
+	    },
+	    "src/Home_lib/Home_free/Home_free_Option_Details.html": {
+	      "href": "src/Home_lib/Home_free/Home_free_Option_Details.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "css/Details.css",
+	        "js/mui.min.js",
+	        "img/bann.jpeg"
+	      ],
+	      "priority": 3
+	    },
+	    "src/Home_lib/Home_free/Home_free_Option_classification.html": {
+	      "href": "src/Home_lib/Home_free/Home_free_Option_classification.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "css/commod.css",
+	        "js/mui.min.js",
+	        "js/Jump.js",
+	        "img/bann.jpeg"
+	      ],
+	      "refer": [
+	        "src/Home_lib/Home_free/Home_free_Option_Details.html"
+	      ],
+	      "priority": 4
+	    },
+	    "src/Home_lib/Home_free/Home_free_Option.html": {
+	      "href": "src/Home_lib/Home_free/Home_free_Option.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "css/commod.css",
+	        "css/Home_activity.css",
+	        "js/mui.min.js",
+	        "js/Jump.js",
+	        "img/1.jpg",
+	        "img/336.png",
+	        "img/bann.jpeg"
+	      ],
+	      "refer": [
+	        "src/Home_lib/Home_activity/Home_activity_Details.html",
+	        "src/Home_lib/Home_free/Home_free_Option_Details.html",
+	        "src/Home_lib/Home_free/Home_free_Option_classification.html"
+	      ],
+	      "priority": 2
+	    },
+	    "src/Home_lib/Home_searchfor/Home_searchfor.html": {
+	      "href": "src/Home_lib/Home_searchfor/Home_searchfor.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "css/Home_searchfor.css",
+	        "css/commod.css",
+	        "js/mui.min.js"
+	      ],
+	      "priority": 3
+	    },
+	    "src/Home_lib/Home_news/Home_news.html": {
+	      "href": "src/Home_lib/Home_news/Home_news.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "js/mui.min.js"
+	      ],
+	      "priority": 4
+	    },
+	    "src/Home_lib/Home_product/Home_product_Details.html": {
+	      "href": "src/Home_lib/Home_product/Home_product_Details.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "css/Details.css",
+	        "js/mui.min.js",
+	        "img/timg1.jpg",
+	        "img/timg.jpg"
+	      ],
+	      "priority": 6
+	    },
+	    "src/Home_lib/Home_product/Home_product.html": {
+	      "href": "src/Home_lib/Home_product/Home_product.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "css/commod.css",
+	        "js/mui.min.js",
+	        "js/Jump.js"
+	      ],
+	      "refer": [
+	        "src/Home_lib/Home_product/Home_product_Details.html"
+	      ],
+	      "priority": 6
+	    },
+	    "src/Home_lib/Home_integral/Home_integra_rulel.html": {
+	      "href": "src/Home_lib/Home_integral/Home_integra_rulel.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "css/Home_activity.css",
+	        "js/mui.min.js",
+	        "img/364246907589951580.jpg"
+	      ],
+	      "priority": 7
+	    },
+	    "src/Home_lib/Home_integral/Home_integral_commodity.html": {
+	      "href": "src/Home_lib/Home_integral/Home_integral_commodity.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "css/commod.css",
+	        "js/mui.min.js",
+	        "js/Jump.js"
+	      ],
+	      "priority": 8
+	    },
+	    "src/Home_lib/Home_Cardcoupon/Home_activity_Cardcoupon.html": {
+	      "href": "src/Home_lib/Home_Cardcoupon/Home_activity_Cardcoupon.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "js/mui.min.js",
+	        "img/hongbao.jpg"
+	      ],
+	      "priority": 8
+	    },
+	    "src/personal_lib/personal_Signin_shake/personal_shake.html": {
+	      "href": "src/personal_lib/personal_Signin_shake/personal_shake.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "js/mui.min.js"
+	      ],
+	      "priority": 4
+	    },
+	    "src/personal_lib/personal_integral/personal_integral_Recharge.html": {
+	      "href": "src/personal_lib/personal_integral/personal_integral_Recharge.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "js/mui.min.js",
+	        "img/lou.png"
+	      ],
+	      "priority": 5
+	    },
+	    "src/personal_lib/personal_integral/personal_integral_Transfer.html": {
+	      "href": "src/personal_lib/personal_integral/personal_integral_Transfer.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "js/mui.min.js"
+	      ],
+	      "priority": 6
+	    },
+	    "src/personal_lib/personal_integral/personal_integral_DetailS.html": {
+	      "href": "src/personal_lib/personal_integral/personal_integral_DetailS.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "js/mui.min.js"
+	      ],
+	      "priority": 7
+	    },
+	    "src/personal_lib/personal_integral/personal_integral_Detail.html": {
+	      "href": "src/personal_lib/personal_integral/personal_integral_Detail.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "js/mui.min.js",
+	        "js/Jump.js"
+	      ],
+	      "refer": [
+	        "src/personal_lib/personal_integral/personal_integral_DetailS.html"
+	      ],
+	      "priority": 7
+	    },
+	    "src/personal_lib/personal_Cardroll/personal_Withwine.html": {
+	      "href": "src/personal_lib/personal_Cardroll/personal_Withwine.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "css/Withwine.css",
+	        "js/mui.min.js"
+	      ],
+	      "priority": 8
+	    },
+	    "src/personal_lib/personal_Cardroll/personal_Cardroll.html": {
+	      "href": "src/personal_lib/personal_Cardroll/personal_Cardroll.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "css/CardRoll.css",
+	        "js/mui.min.js"
+	      ],
+	      "priority": 9
+	    },
+	    "src/personal_lib/personal_Promotion/personal_Promotion_member.html": {
+	      "href": "src/personal_lib/personal_Promotion/personal_Promotion_member.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf"
+	      ],
+	      "priority": 10
+	    },
+	    "src/personal_lib/personal_Promotion/personal_Promotion_QRcode.html": {
+	      "href": "src/personal_lib/personal_Promotion/personal_Promotion_QRcode.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "js/mui.min.js"
+	      ],
+	      "priority": 11
+	    },
+	    "src/personal_lib/personal_Promotion/personal_Promotion_recording.html": {
+	      "href": "src/personal_lib/personal_Promotion/personal_Promotion_recording.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "js/mui.min.js"
+	      ],
+	      "priority": 12
+	    },
+	    "src/personal_lib/personal_Promotion/personal_Promotion.html": {
+	      "href": "src/personal_lib/personal_Promotion/personal_Promotion.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "js/mui.min.js",
+	        "js/Jump.js"
+	      ],
+	      "refer": [
+	        "src/personal_lib/personal_Promotion/personal_Promotion_member.html",
+	        "src/personal_lib/personal_Promotion/personal_Promotion_QRcode.html",
+	        "src/personal_lib/personal_Promotion/personal_Promotion_recording.html"
+	      ],
+	      "priority": 10
+	    },
+	    "src/personal_lib/personal_Merchant/personal_scanit.html": {
+	      "href": "src/personal_lib/personal_Merchant/personal_scanit.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "js/mui.min.js"
+	      ],
+	      "priority": 11
+	    },
+	    "src/personal_lib/personal_Merchant/personal_Cashregister.html": {
+	      "href": "src/personal_lib/personal_Merchant/personal_Cashregister.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "js/mui.min.js",
+	        "js/Jump.js"
+	      ],
+	      "refer": [
+	        "src/personal_lib/personal_Merchant/personal_scanit.html"
+	      ],
+	      "priority": 11
+	    },
+	    "src/personal_lib/personal_Merchant/personal_integral_Detail.html": {
+	      "href": "src/personal_lib/personal_Merchant/personal_integral_Detail.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "js/mui.min.js"
+	      ],
+	      "priority": 12
+	    },
+	    "src/personal_lib/personal_Merchant/personal_consumCode.html": {
+	      "href": "src/personal_lib/personal_Merchant/personal_consumCode.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "js/mui.min.js",
+	        "js/Jump.js"
+	      ],
+	      "refer": [
+	        "src/personal_lib/personal_Merchant/personal_integral_Detail.html"
+	      ],
+	      "priority": 12
+	    },
+	    "src/personal_lib/personal_Merchant/personal_withdraw_with.html": {
+	      "href": "src/personal_lib/personal_Merchant/personal_withdraw_with.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "js/mui.min.js"
+	      ],
+	      "priority": 13
+	    },
+	    "src/personal_lib/personal_Merchant/personal_withdraw.html": {
+	      "href": "src/personal_lib/personal_Merchant/personal_withdraw.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "js/mui.min.js",
+	        "js/Jump.js"
+	      ],
+	      "refer": [
+	        "src/personal_lib/personal_Merchant/personal_withdraw_with.html"
+	      ],
+	      "priority": 13
+	    },
+	    "src/personal_lib/personal_Merchant/personal_Report.html": {
+	      "href": "src/personal_lib/personal_Merchant/personal_Report.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "js/mui.min.js"
+	      ],
+	      "priority": 14
+	    },
+	    "src/personal_lib/personal_Merchant/personal_Merchant.html": {
+	      "href": "src/personal_lib/personal_Merchant/personal_Merchant.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "js/mui.min.js",
+	        "js/Jump.js"
+	      ],
+	      "refer": [
+	        "src/personal_lib/personal_Merchant/personal_Cashregister.html",
+	        "src/personal_lib/personal_Merchant/personal_consumCode.html",
+	        "src/personal_lib/personal_Merchant/personal_withdraw.html",
+	        "src/personal_lib/personal_Merchant/personal_Report.html"
+	      ],
+	      "priority": 11
+	    },
+	    "src/personal_lib/personal_Setting/personal_birthday.html": {
+	      "href": "src/personal_lib/personal_Setting/personal_birthday.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "js/mui.picker.min.js",
+	        "js/mui.min.js"
+	      ],
+	      "priority": 12
+	    },
+	    "src/personal_lib/personal_Setting/personal_gender.html": {
+	      "href": "src/personal_lib/personal_Setting/personal_gender.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "js/mui.min.js"
+	      ],
+	      "priority": 13
+	    },
+	    "src/personal_lib/personal_Setting/personal_Receipt_address.html": {
+	      "href": "src/personal_lib/personal_Setting/personal_Receipt_address.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "js/mui.min.js"
+	      ],
+	      "priority": 14
+	    },
+	    "src/personal_lib/personal_Setting/personal_Receipt.html": {
+	      "href": "src/personal_lib/personal_Setting/personal_Receipt.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "js/mui.min.js",
+	        "js/Jump.js"
+	      ],
+	      "refer": [
+	        "src/personal_lib/personal_Setting/personal_Receipt_address.html"
+	      ],
+	      "priority": 14
+	    },
+	    "src/personal_lib/personal_Setting/personal_Setting_inf.html": {
+	      "href": "src/personal_lib/personal_Setting/personal_Setting_inf.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "js/mui.min.js",
+	        "js/Jump.js"
+	      ],
+	      "refer": [
+	        "src/personal_lib/personal_Setting/personal_birthday.html",
+	        "src/personal_lib/personal_Setting/personal_gender.html",
+	        "src/personal_lib/personal_Setting/personal_Receipt.html"
+	      ],
+	      "priority": 12
+	    },
+	    "src/personal_lib/personal_Setting/personal_Changetie.html": {
+	      "href": "src/personal_lib/personal_Setting/personal_Changetie.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "js/mui.min.js"
+	      ],
+	      "priority": 13
+	    },
+	    "src/personal_lib/personal_Setting/personal_Pay_password.html": {
+	      "href": "src/personal_lib/personal_Setting/personal_Pay_password.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "js/mui.min.js"
+	      ],
+	      "priority": 14
+	    },
+	    "src/personal_lib/personal_Setting/personal_login_Retrieve.html": {
+	      "href": "src/personal_lib/personal_Setting/personal_login_Retrieve.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "js/mui.min.js"
+	      ],
+	      "priority": 15
+	    },
+	    "src/personal_lib/personal_Setting/personal_Wallet_account.html": {
+	      "href": "src/personal_lib/personal_Setting/personal_Wallet_account.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "js/mui.min.js"
+	      ],
+	      "priority": 16
+	    },
+	    "src/personal_lib/personal_Setting/personal_Setti.html": {
+	      "href": "src/personal_lib/personal_Setting/personal_Setti.html",
+	      "resources": [
+	        "css/mui.min.css",
+	        "fonts/mui.ttf",
+	        "js/mui.min.js",
+	        "js/Jump.js"
+	      ],
+	      "refer": [
+	        "src/personal_lib/personal_Setting/personal_Changetie.html",
+	        "src/personal_lib/personal_Setting/personal_Pay_password.html",
+	        "src/personal_lib/personal_Setting/personal_login_Retrieve.html",
+	        "src/personal_lib/personal_Setting/personal_Wallet_account.html"
+	      ],
+	      "priority": 13
+	    }
+	  },
+	  "idle": {
+	    "resources": [
+	      "img/timg3.jpg",
+	      "img/2.png",
+	      "img/timg (3).jpg",
+	      "src/signUp/login.html",
+	      "css/mui.css",
+	      "src/Shopping_lib/Shopping_Selflifting.html",
+	      "src/Shopping_lib/Shopping_Courier.html",
+	      "src/signUp/signUp_registered.html",
+	      "src/Shopping_lib/Shopping_theway.html",
+	      "img/banner.jpg",
+	      "img/timg (2).jpg",
+	      "src/rencai.html",
+	      "js/Pickup_Calculation.js",
+	      "js/mui.js",
+	      "src/personal_lib/personal_Setting/personal_login_password.html",
+	      "src/Shop_lib/Shop_Checkin_submit.html"
+	    ]
+	  }
+	},
+	"unpackage":[
+	  "img/2.png",
+	  "css/mui.css",
+	  "img/timg3.jpg",
+	  "js/mui.js",
+	  "src/rencai.html"
+	]
+}

@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>订单</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+	<style>
+		/*消费码*/
+		.xfm{font-size: 16px;
+		color: #000000;
+		line-height: 30px;}
+		.btn{margin: 0 5px;}
+	</style>
+	</head>
+	
+	<body>
+
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">订单</h1>
+		</header>
+		<div class="mui-content">
+			<div class="mui-slider">
+				<div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<a class="mui-control-item" href="#item1">全部</a>
+					<a class="mui-control-item" href="#item2">待付款</a>
+					<a class="mui-control-item" href="#item3">待收货</a>
+					<a class="mui-control-item" href="#item4">退款/售后</a>
+					<a class="mui-control-item" href="#item5">已关闭</a>
+				</div>
+				<!--
+             	描述：上面是菜单
+             	下面是菜单容器
+             -->
+				<div class="mui-slider-group">
+					<div id="item1" class="mui-slider-item mui-control-content mui-active">
+						<ul class="mui-table-view">
+								<li class="mui-table-view-cell mui-media">
+										<div class="mui-media-body">
+											冥河KTV
+											<span class="mui-pull-right" style="color: green;">已消费</span>
+											<p class="mui-ellipsis">下单时间：<span>2017-07-23</span> 11：23：25</p>
+											<p class="mui-ellipsis">
+												原价：￥<span>150</span>积分减<span>红包50</span>&nbsp;<span class="mui-pull-right" style="color: red;">实际付款￥100</span></p>
+												<!--<p class="mui-ellipsis mui-pull-right"style="width: 100%;">
+												<span class="xfm">消费码:<span>54564654</span></span>
+												</p>-->
+										</div>
+								</li>
+							<li >第1个选项卡子项</li>
+						</ul>
+					</div>
+					<!--
+		         	菜单容器
+		         -->
+					<div id="item2" class="mui-slider-item mui-control-content">
+						<ul class="mui-table-view">
+								<li class="mui-table-view-cell mui-media">
+										<div class="mui-media-body">
+											冥河KTV
+											<span class="mui-pull-right" style="color: green;">未付款</span>
+											<p class="mui-ellipsis">下单时间：<span>2017-07-23</span> 11：23：25</p>
+											<p class="mui-ellipsis">
+												原价：￥<span>150</span>积分减<span>红包50</span>&nbsp;<span class="mui-pull-right" style="color: red;">实际付款￥100</span></p>
+												<p class="mui-ellipsis mui-pull-right"style="width: 100%;">
+												<!--<span class="xfm">消费码:<span></span></span>-->
+												</p>
+												<p class="mui-ellipsis mui-pull-right"style="width: 100%;">
+												<button type="button" class="mui-btn mui-btn-outlined mui-pull-right btn">付款</button>
+												<button type="button" class="mui-btn mui-btn-outlined mui-pull-right btn">取消</button>
+												</p>
+												
+										</div>
+								</li>
+							<li class="mui-table-view-cell">第2个选项卡子项</li>
+						</ul>
+					</div>
+					<!--
+		         	菜单容器
+		         -->
+					<div id="item3" class="mui-slider-item mui-control-content">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell mui-media">
+										<div class="mui-media-body">
+											冥河KTV
+											<span class="mui-pull-right" style="color: green;">处理中</span>
+											<p class="mui-ellipsis">下单时间：<span>2017-07-23</span> 11：23：25</p>
+											<p class="mui-ellipsis">
+												原价：￥<span>150</span>积分减<span>红包50</span>&nbsp;<span class="mui-pull-right" style="color: red;">实际付款￥100</span></p>
+												<!--<p class="mui-ellipsis mui-pull-right"style="width: 100%;">
+												<span class="xfm">消费码:<span>123456</span></span>
+												</p>-->
+												<p class="mui-ellipsis mui-pull-right"style="width: 100%;">
+												<button type="button" class="mui-btn mui-btn-outlined mui-pull-right btn">退款</button>
+												</p>
+												
+										</div>
+								</li>
+							<li class="mui-table-view-cell">第3个选项卡子项</li>
+						</ul>
+					</div>
+					<!--
+		         	菜单容器
+		         -->
+					<div id="item4" class="mui-slider-item mui-control-content">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell mui-media">
+										<div class="mui-media-body">
+											冥河KTV
+											<span class="mui-pull-right" style="color: green;">处理中</span>
+											<p class="mui-ellipsis">退款时间：<span>2017-07-23</span> 11：23：25</p>
+											<p class="mui-ellipsis">
+												原价：￥<span>150</span>积分减<span>红包50</span>&nbsp;<span class="mui-pull-right" style="color: red;">退款金额100</span>
+											</p>
+											<!--<p class="mui-ellipsis">
+												<span class="xfm">消费码:<span>123456</span></span>
+												<span class="mui-pull-right" style="color: red;">返利￥10</span>
+											</p>-->
+											<!--<p class="mui-ellipsis mui-pull-right"style="width: 100%;">
+												<button type="button" class="mui-btn mui-btn-outlined mui-pull-right btn">删除订单</button>
+												</p>-->
+										</div>
+								</li>
+							<li class="mui-table-view-cell">第4个选项卡子项</li>
+						</ul>
+					</div>
+					<!--
+		         	菜单容器
+		         -->
+					<div id="item5" class="mui-slider-item mui-control-content">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell mui-media">
+										<div class="mui-media-body">
+											冥河KTV
+											<span class="mui-pull-right" style="color: green;">已关闭</span>
+											<p class="mui-ellipsis">下单时间：<span>2017-07-23</span> 11：23：25</p>
+											<p class="mui-ellipsis">
+												原价：￥<span>150</span>积分减<span>红包50</span>&nbsp;<span class="mui-pull-right" style="color: red;">实际付款￥100</span>
+											</p>
+											<p class="mui-ellipsis mui-pull-right"style="width: 100%;">
+												<button type="button" class="mui-btn mui-btn-outlined mui-pull-right btn">删除订单</button>
+												</p>
+										</div>
+								</li>
+							<li class="mui-table-view-cell">5个选项卡子项</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../../js/mui.min.js"></script>
+
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

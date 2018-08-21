@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>商家入驻</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<!--App自定义的css-->
+		<!--<link rel="stylesheet" type="text/css" href="../css/app.css"/>-->
+		<link rel="stylesheet" type="text/css" href="../css/home.css" />
+		<link rel="stylesheet" type="text/css" href="../css/commod.css" />
+		<link rel="stylesheet" type="text/css" href="../css/Shop.css"/>
+	</head>
+
+	<body>
+		<!--<header class="mui-bar">
+
+			<h1 class="mui-title">
+		   	 <p class="a" htmlName="./Home_lib/Home_searchfor/Hom e_searchfor.html"></p>
+		  
+		    </h1>
+			<div class="mui-pull-right sousuo a">搜索</div>
+		</header>-->
+		<div class="mui-content">
+			<!---->
+			<div id="slider" class="mui-slider">
+				<div class="mui-slider-group mui-slider-loop">
+					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="../img/timg (3).jpg">
+						</a>
+					</div>
+					<!-- 第一张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="../img/timg (3).jpg">
+						</a>
+					</div>
+					<!-- 第二张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="../img/timg (3).jpg">
+						</a>
+					</div>
+					<!-- 第三张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="../img/timg (3).jpg">
+						</a>
+					</div>
+					<!-- 第四张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="../img/timg (3).jpg">
+						</a>
+					</div>
+					<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="../img/timg (3).jpg">
+						</a>
+					</div>
+				</div>
+				<div class="mui-slider-indicator">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+				</div>
+			</div>
+			<!--主图结束-->
+			
+			
+			<!--活动-->
+			<div class="Features">
+				<div class="Features_left a" htmlName="Shop_lib/Shop_Entering.html" >入驻流程</div>
+				<div class="Features_in a" htmlName="Shop_lib/Shop_Checkin.html">申请入住</div>
+				<div class="Features_right">积分规则</div>
+			</div>
+			<!--活动-->
+			<!--产品楼层-->
+			<div class="floor">
+				<div class="floor_title">
+					<div>推荐商家</div>
+					<div><a>全部商家</a></div>
+					
+				</div>
+				<div class="floor_cont">
+
+					<div class="floor_cont_div">
+						<div><img src="../img/timg (2).jpg" /></div>
+						<div>红酒 </div>
+						<div>购买量155</div>
+						<div>25元</div>
+					</div>
+					<div class="floor_cont_div">
+						<div><img src="../img/timg (2).jpg" /></div>
+						<div>红酒 </div>
+						<div>购买量155</div>
+						<div>25元</div>
+					</div>
+
+				</div>
+				<!---->
+				<div class="floor_cont">
+
+					<div class="floor_cont_div">
+						<div><img src="../img/timg (2).jpg" /></div>
+						<div>红酒 </div>
+						<div>购买量155</div>
+						<div>25元</div>
+					</div>
+					<div class="floor_cont_div">
+						<div><img src="../img/timg (2).jpg" /></div>
+						<div>红酒 </div>
+						<div>购买量155</div>
+						<div>25元</div>
+					</div>
+
+				</div>
+			</div>
+			<!--产品楼层-->
+
+			<!---->
+		</div>
+		<script src="../js/scrolltext.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/Jump.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+
+			(function(e) {
+				//主图滚动
+				var slider = mui("#slider");
+				document.getElementById("switch");
+				slider.slider({
+					interval: 1000
+				});
+			})()
+
+			//公告
+			if(document.getElementById("jsfoot01")) {
+				var scrollup = new ScrollText("jsfoot01");
+				scrollup.LineHeight = 22; //单排文字滚动的高度
+				scrollup.Amount = 1; //注意:子模块(LineHeight)一定要能整除Amount.
+				scrollup.Delay = 20; //延时
+				scrollup.Start(); //文字自动滚动
+				scrollup.Direction = "down"; //文字向下滚动
+			}
+		</script>
+	</body>
+
+</html>

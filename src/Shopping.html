@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/Shopping.css"/>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">购物车</h1>
+			<a id="deletes" class="mui-icon  mui-pull-right" style="display: none;">全部删除</a>
+		</header>
+
+		<div class="mui-content">
+			<!---->
+
+			<!--商品列表-->
+			<ul class="mui-table-view">
+				<!--商品-->
+				<li class="mui-table-view-cell mui-left shop_li">
+					<div class="shop_li_left mui-checkbox">
+						<input name="checkbox" type="checkbox">
+					</div>
+					<div class="mui-media-body shop_li_in">
+						<img src="../img/0191f44.jpg" width="100px" />
+					</div>
+					<div class="mui-media-body shop_li_right">
+						<div class="p">惠而浦空气净化器家用去除甲醛负离子卧室杀菌WA-5001FK/5101SFK001FK/5101SFK001FK/5101SFK</div>
+						<div class="shop_li_right_div">
+							￥<span style="color: red;">209.00</span>
+							<div class="mui-numbox" data-numbox-min='1' data-numbox-max=''>
+								<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+								<input id="test" class="mui-input-numbox" type="number" value="1" />
+								<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+							</div>
+						</div>
+					</div>
+					<span class="shop_li_delete mui-icon mui-icon-trash">
+						<!--删除图标-->
+					</span>
+				</li>
+				<!--商品-->
+				<!--商品-->
+				<li class="mui-table-view-cell mui-left shop_li">
+					<div class="shop_li_left mui-checkbox">
+						<input name="checkbox" type="checkbox">
+					</div>
+					<div class="mui-media-body shop_li_in">
+						<img src="../img/0191f44.jpg" width="100px" />
+					</div>
+					<div class="mui-media-body shop_li_right">
+						<div class="p">惠而浦空气净化器家用去除甲醛负离子卧室杀菌WA-5001FK/5101SFK001FK/5101SFK001FK/5101SFK</div>
+						<div class="shop_li_right_div">
+							￥<span class="data-p" style="color: red;">209.00</span>
+							<div class="mui-numbox" data-numbox-min='1' data-numbox-max=''>
+								<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+								<input id="test" class="mui-input-numbox" type="number" value="1" />
+								<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+							</div>
+						</div>
+					</div>
+					<span class="shop_li_delete mui-icon mui-icon-trash">
+						<!--删除图标-->
+					</span>
+				</li>
+				<!--商品-->
+			</ul>
+			<!--底部结算-->
+			<div class="shopCart">
+				<div class="left">
+					<div class="price">
+						<div class="mui-input-row mui-checkbox mui-left">
+							<label>全选</label>
+							<input id="checkAll" type="checkbox" style="top: 10px;">
+						</div>
+						<span>合计:￥</span>
+						<span id="total">0</span>
+					</div>
+				</div>
+				<div class="right" id="pay">去结算</div>
+			</div>
+			<!--底部结算-->
+		</div>
+
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/Shopping.js"></script>
+		<script type="text/javascript">
+			mui.init()
+				//商品的金额计算与删除内容操作，放在../js/Shopping.js内
+				
+		</script>
+	</body>
+
+</html>

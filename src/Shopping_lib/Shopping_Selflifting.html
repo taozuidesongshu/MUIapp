@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>自提</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link href="../../css/Shopping.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">自提</h1>
+		</header>
+		<div class="mui-content">
+			<!---->
+			<form action="" method="post">
+				<div class="mui-input-row mui-radio mui-left">
+					<label>某某门店，某某地址</label>
+					<input name="radio1" type="radio" checked>
+				</div>
+				<div class="mui-input-row mui-radio mui-left">
+					<label>某某门店，某某地址</label>
+					<input name="radio1" type="radio">
+				</div>
+				<div class="mui-input-row mui-radio mui-left">
+					<label>某某门店，某某地址</label>
+					<input name="radio1" type="radio">
+				</div>
+
+				<!--商品-->
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell mui-left shop_li">
+						<div class="mui-media-body shop_li_in">
+							<img src="../../img/timg (2).jpg" width="100px" />
+						</div>
+						<div class="mui-media-body shop_li_right">
+							<div class="p">惠而浦空气净化器家用去除甲醛负离子卧室杀菌WA-5001FK/5101SFK001FK/5101SFK001FK/5101SFK</div>
+							<div class="shop_li_right_div">
+								￥<span class="money" style="color: red;">209.31</span> ×<span id="qua">1</span>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<!--商品-->
+				<div class="mui-input-row">
+					<label>购买数量</label>
+					<div class="mui-numbox" data-numbox-min='1' data-numbox-max=''>
+						<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+						<input id="test" class="mui-input-numbox" type="number" name="checkbox" value="1" />
+						<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+					</div>
+				</div>
+				<div class="floor_title" style="background: none;">
+					<div class="floor_title_box">
+					<div>快递费</div>
+					<div>9元</div>
+					</div>
+				</div>
+
+				<hr />
+
+				<div class="floor_title" style="background: none;">
+					<div class="floor_title_box">
+					<div>优惠卷/红包</div>
+					<div><span>-9</span>元</div>
+					</div>
+				</div>
+				<div class="floor_title" style="background: none;">
+					<div class="floor_title_box">
+					<div>合计费用</div>
+					<div><span id="total">218</span>元</div>
+					</div>
+				</div>
+				<div class="floor_title" style="background: none;">
+					<div>付款方式</div>
+
+				</div>
+				<div>
+					<div class="mui-input-row mui-radio mui-left">
+						<label>支付宝</label>
+						<input name="Pay" type="radio" checked>
+					</div>
+					<div class="mui-input-row mui-radio mui-left">
+						<label>微信</label>
+						<input name="Pay" type="radio">
+					</div>
+					<div class="mui-input-row mui-radio mui-left">
+						<label>兑换卷</label>
+						<input name="Pay" type="radio">
+					</div>
+
+				</div>
+
+				<button type="button" class="mui-btn mui-btn-success mui-btn-block">付款</button>
+
+			</form>
+		</div>
+		<!---->
+		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/Pickup_Calculation.js"></script>
+
+		<script type="text/javascript">
+			mui.init()
+			//页面的价格计算，在引入的Pickup_Calculation.js中
+		</script>
+	</body>
+
+</html>
